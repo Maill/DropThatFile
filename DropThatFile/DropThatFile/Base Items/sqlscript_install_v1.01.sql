@@ -74,7 +74,7 @@ CREATE TABLE childOf(
 
 
 
-ALTER TABLE filesOfAccount ADD CONSTRAINT FK_filesOfAccount_id FOREIGN KEY (id) REFERENCES accounts(id);
+ALTER TABLE filesOfAccount ADD CONSTRAINT FK_filesOfAccount_id_account FOREIGN KEY (id_account) REFERENCES accounts(id);
 ALTER TABLE filesOfAccount ADD CONSTRAINT FK_filesOfAccount_id_files FOREIGN KEY (id_files) REFERENCES files(id);
 ALTER TABLE filesOfAccount ADD CONSTRAINT FK_filesOfAccount_id_groups FOREIGN KEY (id_groups) REFERENCES groups(id);
 ALTER TABLE membersOf ADD CONSTRAINT FK_membersOf_id_account FOREIGN KEY (id_account) REFERENCES accounts(id);
