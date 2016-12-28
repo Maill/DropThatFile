@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropThatFile", "DropThatFile\DropThatFile.csproj", "{8AD10808-F285-43BD-B69C-7F2B893671F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTF_DAL", "DTF_DAL\DTF_DAL.csproj", "{53C77309-02E2-42EE-B569-0FC88A2FDEE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTF_SERVICE", "DTF_SERVICE\DTF_SERVICE.csproj", "{55D21048-C92C-4968-88CC-064E21FF896E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{53C77309-02E2-42EE-B569-0FC88A2FDEE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53C77309-02E2-42EE-B569-0FC88A2FDEE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53C77309-02E2-42EE-B569-0FC88A2FDEE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D21048-C92C-4968-88CC-064E21FF896E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D21048-C92C-4968-88CC-064E21FF896E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D21048-C92C-4968-88CC-064E21FF896E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D21048-C92C-4968-88CC-064E21FF896E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
