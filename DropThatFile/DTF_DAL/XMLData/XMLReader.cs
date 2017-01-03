@@ -9,6 +9,7 @@ namespace DTF_DAL.XMLData
     class XMLReader
     {
         private XmlDocument XMLFile { get; set; }
+
         public XMLReader(string XMLPath)
         {
 
