@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using DTF_BACKEND.DataContract;
 
 namespace DropThatFile
 {
@@ -14,9 +13,7 @@ namespace DropThatFile
     {
         public Login()
         {
-            test rere = new test();
             InitializeComponent();
-            this.textBox1.Text = rere.testService;
         }
     }
 }
