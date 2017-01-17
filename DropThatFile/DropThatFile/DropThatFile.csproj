@@ -87,6 +87,12 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTF_SERVICE\DTF_SERVICE.csproj">
+      <Project>{a1c770a3-da9d-4cb3-9aaf-b8b83cba0fdf}</Project>
+      <Name>DTF_SERVICE</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
