@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DropThatFile</RootNamespace>
     <AssemblyName>DropThatFile</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -88,9 +88,9 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DTF_SERVICE\DTF_SERVICE.csproj">
-      <Project>{a1c770a3-da9d-4cb3-9aaf-b8b83cba0fdf}</Project>
-      <Name>DTF_SERVICE</Name>
+    <ProjectReference Include="..\DTF_BACKEND\DTF_BACKEND.csproj">
+      <Project>{2ca2aef0-5e90-4597-a0fb-b3a86b2da56f}</Project>
+      <Name>DTF_BACKEND</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

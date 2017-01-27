@@ -81,11 +81,17 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>sc start "DTF Service"</PostBuildEvent>
+    <PostBuildEvent>IF $(ConfigurationName)==Release (EXIT 0)
+SC CREATE "DTF Service" binPath= "$(TargetPath)" start= auto
+SC FAILURE "DTF Service" reset= 30 actions= restart/1
+SC START "DTF Service"</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PreBuildEvent>
-    </PreBuildEvent>
+    <PreBuildEvent>NET STOP "DTF Service"
+SC DELETE "DTF Service"
+IF errorlevel 1060 ECHO "Error on PRE-BUILD event"
+RMDIR $(TargetDir) /S
+EXIT 0</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
